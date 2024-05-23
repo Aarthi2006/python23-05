@@ -1,0 +1,14 @@
+def sort_array_ascending(array):
+    sorted_array = sorted(array)
+    return sorted_array
+
+def main():
+    size = int(input("Enter the size of the array: "))
+    array = [int(x) for x in input(f"Enter {size} elements separated by space: ").split()]
+    
+    sorted_array = sort_array_ascending(array)
+    
+    print("Array elements sorted in ascending order:", sorted_array)
+
+if __name__ == "__main__":
+    main()
