@@ -1,0 +1,14 @@
+def sum_of_elements(array):
+    total_sum = sum(array)
+    return total_sum
+
+def main():
+    size = int(input("Enter the size of the array: "))
+    array = [int(x) for x in input(f"Enter {size} elements separated by space: ").split()]
+    
+    array_sum = sum_of_elements(array)
+    
+    print("Sum of elements of the array:", array_sum)
+
+if __name__ == "__main__":
+    main()
