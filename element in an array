@@ -1,0 +1,14 @@
+def search_element(array, element):
+    for i, num in enumerate(array):
+        if num == element:
+            return i
+    return -1
+
+def main():
+    array = [int(x) for x in input("Enter elements of the array separated by space: ").split()]
+    search_element = int(input("Enter the element to search for: "))
+    
+    position = search_element(array
+
+
+
