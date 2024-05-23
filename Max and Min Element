@@ -1,0 +1,14 @@
+def product_of_max_min(arr1, arr2):
+    max_element_arr1 = max(arr1)
+    min_element_arr2 = min(arr2)
+    return max_element_arr1 * min_element_arr2
+
+def main():
+    arr1 = [int(x) for x in input("Enter the elements of the first array separated by space: ").split()]
+    arr2 = [int(x) for x in input("Enter the elements of the second array separated by space: ").split()]
+
+    result = product_of_max_min(arr1, arr2)
+    print("Product of the maximum element of the first array and the minimum element of the second array:", result)
+
+if __name__ == "__main__":
+    main()
