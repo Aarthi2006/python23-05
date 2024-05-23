@@ -1,0 +1,19 @@
+def remove_duplicates(array):
+    unique_elements = []
+    for num in array:
+        if num not in unique_elements:
+            unique_elements.append(num)
+    return unique_elements
+
+def main():
+    size = int(input("Enter the array size: "))
+    array = [int(x) for x in input(f"Input {size} elements in an array: ").split()]
+    
+    unique_elements = remove_duplicates(array)
+    
+    print("The unique elements found in the array are:")
+    for num in unique_elements:
+        print(num, end=" ")
+
+if __name__ == "__main__":
+    main()
