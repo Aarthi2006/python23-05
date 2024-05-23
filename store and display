@@ -1,0 +1,19 @@
+def store_elements(num_elements):
+    elements = []
+    for i in range(num_elements):
+        element = input("Enter element {}: ".format(i+1))
+        elements.append(element)
+    return elements
+
+def display_elements(elements):
+    print("Elements in the array:")
+    for i, element in enumerate(elements):
+        print("Element {}: {}".format(i+1, element))
+
+def main():
+    num_elements = int(input("Enter the number of elements: "))
+    elements = store_elements(num_elements)
+    display_elements(elements)
+
+if __name__ == "__main__":
+    main()
