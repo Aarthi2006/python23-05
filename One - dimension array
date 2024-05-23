@@ -1,0 +1,24 @@
+def are_arrays_same(array1, array2):
+    if len(array1) != len(array2):
+        return False
+    
+    for i in range(len(array1)):
+        if array1[i] != array2[i]:
+            return False
+    
+    return True
+
+def main():
+    size1 = int(input("Enter the size of the first array: "))
+    array1 = [int(x) for x in input(f"Enter {size1} elements for the first array separated by space: ").split()]
+    
+    size2 = int(input("Enter the size of the second array: "))
+    array2 = [int(x) for x in input(f"Enter {size2} elements for the second array separated by space: ").split()]
+    
+    if are_arrays_same(array1, array2):
+        print("The arrays are the same.")
+    else:
+        print("The arrays are not the same.")
+
+if __name__ == "__main__":
+    main()
