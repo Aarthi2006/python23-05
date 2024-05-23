@@ -1,0 +1,29 @@
+def display_array(array):
+    print("Array elements:", array)
+
+def insert_element(array, element, position):
+    array.insert(position - 1, element)
+    print("Inserted", element, "at position", position)
+    display_array(array)
+
+def delete_element(array, position):
+    if 0 < position <= len(array):
+        deleted_element = array.pop(position - 1)
+        print("Deleted element", deleted_element, "from position", position)
+        display_array(array)
+    else:
+        print("Invalid position!")
+
+def main():
+    array = [int(x) for x in input("Enter numbers separated by space: ").split()]
+    display_array(array)
+
+    insert_num = int(input("Enter the number to insert: "))
+    insert_pos = int(input("Enter the position to insert: "))
+    insert_element(array, insert_num, insert_pos)
+
+    delete_pos = int(input("Enter the position to delete: "))
+    delete_element(array, delete_pos)
+
+if __name__ == "__main__":
+    main()
